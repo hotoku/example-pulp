@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "pulp-example"
+version = "0.1.0"
+description = ""
+authors = ["Yasunori Horikoshi <hotoku@users.noreply.github.com>"]
+license = "MIT"
+readme = "README.md"
+packages = [{include = "pulp_example"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+pulp = "^2.7.0"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
