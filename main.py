@@ -16,7 +16,10 @@ def main() -> None:
     x[2] = pulp.LpVariable(name="x[2]", lowBound=0, cat="Integer")
 
     # 目的関数
-    problem += 20*x[0] + 12*x[1] + 18*x[2]
+    obj = 20*x[0]
+    obj += 12*x[1]
+    obj += 18*x[2]
+    problem += obj
 
     # 制約条件の定義
     problem += 22*x[0] + 13*x[1] + 17*x[2] >= 200
